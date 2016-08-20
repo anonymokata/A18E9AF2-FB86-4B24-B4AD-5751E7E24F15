@@ -11,8 +11,9 @@
 START_TEST(calc)
 {
 #line 4
-inputs("I");
-fail_unless(romanValue("I") == 1,"returned correct roman value"); 
+
+	fail_unless((romanValue('M') == 1000),"returned correct roman value"); 
+	
 }
 END_TEST
 

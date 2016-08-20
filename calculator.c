@@ -6,12 +6,12 @@
 # include <stdlib.h>
 # include <string.h>
 
-void inputs(char roman_number1[50])
+void inputs(char roman_number1)
 {
-	int first_number;
 	
-	first_number = romanValue(roman_number1); // calling roman_decimal function to convert first roman number to decimal
-	return 0;
+	
+	romanValue(roman_number1); 
+	
 }
 
 int romanValue(char c)
