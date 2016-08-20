@@ -1,0 +1,5 @@
+#include "calculator.h"
+
+#test calc
+inputs("I");
+fail_unless(romanValue("I") == 1,"returned correct roman value"); 
