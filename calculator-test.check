@@ -1,6 +1,15 @@
+/* 
+Roman calculator: performs addition and subtraction of roman values
+Author: Vinay vittal Karagod
+File dependents: main.c, calculator.h, calculator.c,calculator-test.check
+Date: 08/21/2016
+calculator-test.check: This file is used to pass the test values to check the correctness of the program
+*/
+
 #include "calculator.h"
 
 #test calc
  // adding the operation of addition and subtraction operation
-	fail_unless(strcmp(calculate("XIV","LX",1),"LXXIV") == 0, "sum function borked"); // for addition operation  
+//passing values to calulate: calculate(first_roman_number,second_roman_number,1/2(addition/subtraction))
+	fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed"); // for addition operation  
 	

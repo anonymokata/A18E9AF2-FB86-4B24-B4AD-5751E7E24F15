@@ -1,1 +1,47 @@
-Roman addition and subtraction operation
+Program to perform the calculation operation on roman numbers.
+calculator-test.check: This file is used to develop the code based inputs provided in the test file
+steps to perfom to pass the test file.
+
+calculator-test.check: Use this file to pass the test cases
+fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed");
+1: corrseponds to addition, 2: corresponds to subtraction
+IV : Frist roman input, X: second roman input
+command line:
+
+1) checkmk calculator-test.check > calculator-test.c
+2) make -f calc.makefile
+3) make -f calc.makefile test
+
+
+output1:
+
+vinay@ubuntu:~/roman_Project$ make -f calc.makefile test
+gcc -Wall -c calculator-test.c
+gcc -o calc-test calculator.o calculator-test.o -lcheck -lpthread -lm -lrt
+./calc-test
+Running suite(s): Core
+100%: Checks: 1, Failures: 0, Errors: 0
+-------------------------------------------------------------------------
+output2:
+
+vinay@ubuntu:~/roman_Project$ make -f calc.makefile test
+gcc -Wall -c calculator-test.c
+gcc -o calc-test calculator.o calculator-test.o -lcheck -lpthread -lm -lrt
+./calc-test
+Running suite(s): Core
+0%: Checks: 1, Failures: 1, Errors: 0
+calculator-test.check:14:F:Core:calc:0: operation failed
+make: *** [test] Error 1
+--------------------------------------------------------------------------
+
+Other: method before check implementation.
+ you can find more commits and logs related to functions:
+
+https://github.com/vinaykv/romanCalculatorProject
+
+
+
+
+
+
+

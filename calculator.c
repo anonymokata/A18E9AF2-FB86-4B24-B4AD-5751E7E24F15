@@ -1,3 +1,10 @@
+/* 
+Roman calculator: performs addition and subtraction of roman values
+Author: Vinay vittal Karagod
+File dependents: main.c, calculator.h, calculator.c,calculator-test.check
+Date: 08/21/2016
+calculator.c: This is a function file which receives values form check this will returns the output of the program
+*/
 # include "calculator.h"
 # include <check.h>
 # include <stdio.h>
