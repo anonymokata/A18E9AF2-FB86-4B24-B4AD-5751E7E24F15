@@ -12,7 +12,7 @@ START_TEST(calc)
 {
 #line 4
  // adding the operation of addition and subtraction operation
-	fail_unless((inputs("M","D",1) == 1500),"returned correct roman value"); 
+	fail_unless(strcmp(calculate("XIV","LX",1),"LXXIV") == 0, "sum function borked"); // for addition operation  
 	
 }
 END_TEST
