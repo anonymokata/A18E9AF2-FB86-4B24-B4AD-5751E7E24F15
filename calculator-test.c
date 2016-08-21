@@ -11,8 +11,8 @@
 START_TEST(calc)
 {
 #line 4
-
-	fail_unless((romanValue('M') == 1000),"returned correct roman value"); 
+inputs("MD"); // test to read the length of characters and return the value
+	fail_unless((roman_decimal("MD") == 1500),"returned correct roman value"); 
 	
 }
 END_TEST
