@@ -11,7 +11,7 @@ int inputs(char roman_number1[50],char roman_number2[50])
 	
 	
 	int first_number, second_number; // to store roman values
-	int sum = 0, sub = 0;// initilizing the process
+	int sum = 0;// initilizing the process
 
 	first_number = roman_decimal(roman_number1); // calling roman_decimal function to convert first roman number to decimal
 		
