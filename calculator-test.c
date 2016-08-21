@@ -11,8 +11,8 @@
 START_TEST(calc)
 {
 #line 4
- // test to read the length of characters and return the value
-	fail_unless((inputs("M","D") == 1500),"returned correct roman value"); 
+ // adding the operation of addition and subtraction operation
+	fail_unless((inputs("M","D",1) == 1500),"returned correct roman value"); 
 	
 }
 END_TEST

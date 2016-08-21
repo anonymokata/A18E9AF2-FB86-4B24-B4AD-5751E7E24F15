@@ -6,26 +6,48 @@
 # include <stdlib.h>
 # include <string.h>
 
-int inputs(char roman_number1[50],char roman_number2[50])
+int inputs(char roman_number1[50],char roman_number2[50], int input)
 {
 	
 	
 	int first_number, second_number; // to store roman values
-	int sum = 0;// initilizing the process
-
+	int sum = 0, sub = 0;// initilizing the addition and subtraction value
 	first_number = roman_decimal(roman_number1); // calling roman_decimal function to convert first roman number to decimal
-		
 	second_number = roman_decimal(roman_number2); // calling roman_decimal function to convert second roman number to decimal
 	
-	sum =  first_number+ second_number;
-	if(sum > 3999)
-	{
-	 	printf("Number exceeds the maximum limit");
-		exit(0);
-	}
-	else
-	return sum;
+	switch(option)
+	        {
+	        case 1:
+	        	sum =  first_number+ second_number;
+	        	if(sum > 3999)
+	        	{
+	        	 	printf("Number exceeds the maximum limit");
+	        	 	exit(0);
+	        	}
+	        	else
+				return sum;
+	        	   	break;
+	        case 2:
+			if(first_number >= second_number)
+	        		sub = first_number - second_number;
+			else
+				sub = second_number - first_number;
 
+	        	if(sub > 3999)
+	        	  {
+	        	  	 printf("Number exceeds the maximum limit");
+	        	   	 exit(0);
+	        	  }
+			else				
+                                return sub; 
+                                break;
+
+	        default :
+	        	printf("Invalid input \n");
+
+	        }
+
+return 0;
 }
 
 int romanValue(char c)
