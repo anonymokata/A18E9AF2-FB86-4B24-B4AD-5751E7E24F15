@@ -6,7 +6,7 @@
 # include <stdlib.h>
 # include <string.h>
 
-int inputs(char roman_number1[50],char roman_number2[50], int input)
+int inputs(char roman_number1[50],char roman_number2[50], int option)
 {
 	
 	
