@@ -11,8 +11,8 @@ calculator-test.check: Test file used to pass the input values to calculate roma
 #test calc
  
 //passing values to calulate: calculate(first_roman_number,second_roman_number,1/2(addition/subtraction))
-	//fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed"); // for addition operation 
-	//fail_unless(strcmp(calculate("IV","X",2),"VI") == 0, "operation failed"); 
-	fail_unless(strcmp(calculate("MM","MM",1),"MMMM") == 0, "operation failed");
+	fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed"); // for addition operation 
+	fail_unless(strcmp(calculate("IV","X",2),"VI") == 0, "operation failed");  // for subtraction operation
+	
 
 	

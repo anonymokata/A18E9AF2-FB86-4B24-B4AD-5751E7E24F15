@@ -17,6 +17,7 @@ calculator.c: function file which receives values from calculator-test.check.
 int roman_index = 0; // index to hold the position of the roman digits 
 char roman_num[50]; // to hold the digits of the roman digits
 
+// Function to recieve the inputs
 char * calculate(char roman_number1[50],char roman_number2[50], int option)
 {
 
@@ -25,7 +26,9 @@ char * calculate(char roman_number1[50],char roman_number2[50], int option)
 	first_number = roman_decimal(roman_number1); // calling roman_decimal function to convert first roman number to decimal
 	second_number = roman_decimal(roman_number2); // calling roman_decimal function to convert second roman number to decimal
 	char * answer; // to store the final result
-	switch(option)
+
+//switch case for addition or subtractio operation	
+		switch(option)
 	        {
 	        case 1:
 	        	sum =  first_number+ second_number;
@@ -60,10 +63,12 @@ char * calculate(char roman_number1[50],char roman_number2[50], int option)
 return answer;
 }
 
-int romanValue(char c)
+
+// to convert each roman number to decimal number
+int romanValue(char r_Character)
 {
 	int value=0;
-		switch(c){
+		switch(r_Character){
 		case 'I': value = 1; 
 		 	  break;
 		case 'V': value = 5; 
@@ -86,6 +91,7 @@ int romanValue(char c)
 		return value;
 }
 
+// function receives the roman string to convert into decimal number
 int roman_decimal(char number[])
 {
 	int index_value = 0;
@@ -128,12 +134,16 @@ void predigits(char character1,char character2)// storing the predigits for exam
 	roman_num[roman_index++] = character2;
 
 }
+
 void postdigits(char character,int count)
 {
 	    int loop;
 	    for(loop=0;loop<count;loop++)
 	    roman_num[roman_index++] = character;
 }
+
+
+//Function to convert back the decimal number to roman number
 char * decimal_roman(int total)
 {
 		while(total !=0)
