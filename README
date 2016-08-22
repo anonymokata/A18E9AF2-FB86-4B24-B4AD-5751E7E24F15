@@ -1,11 +1,12 @@
 Program to perform the calculation operation on roman numbers.
-calculator-test.check: This file is used to develop the code based inputs provided in the test file
+calculator-test.check: This file is used to develop the function. Based on the inputs provided in this file
+
 steps to perfom to pass the test file.
 
 calculator-test.check: Use this file to pass the test cases
 fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed");
-1: corrseponds to addition, 2: corresponds to subtraction
-IV : Frist roman input, X: second roman input
+1: corrseponds to addition, 	2: corresponds to subtraction
+IV : Frist roman input, 	X: second roman input
 command line:
 
 1) checkmk calculator-test.check > calculator-test.c
@@ -38,10 +39,3 @@ Other: method before check implementation.
  you can find more commits and logs related to functions:
 
 https://github.com/vinaykv/romanCalculatorProject
-
-
-
-
-
-
-
