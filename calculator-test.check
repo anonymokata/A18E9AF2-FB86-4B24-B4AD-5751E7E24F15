@@ -3,13 +3,16 @@ Roman calculator: performs addition and subtraction of roman values
 Author: Vinay vittal Karagod
 File dependents: main.c, calculator.h, calculator.c,calculator-test.check
 Date: 08/21/2016
-calculator-test.check: This file is used to pass the test values to check the correctness of the program
+calculator-test.check: Test file used to pass the input values to calculate roman numbers.
 */
 
 #include "calculator.h"
 
 #test calc
- // adding the operation of addition and subtraction operation
+ 
 //passing values to calulate: calculate(first_roman_number,second_roman_number,1/2(addition/subtraction))
-	fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed"); // for addition operation  
+	//fail_unless(strcmp(calculate("IV","X",1),"XIV") == 0, "operation failed"); // for addition operation 
+	//fail_unless(strcmp(calculate("IV","X",2),"VI") == 0, "operation failed"); 
+	fail_unless(strcmp(calculate("MM","MM",1),"MMMM") == 0, "operation failed");
+
 	

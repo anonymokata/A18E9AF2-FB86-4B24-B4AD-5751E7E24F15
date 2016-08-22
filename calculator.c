@@ -3,7 +3,8 @@ Roman calculator: performs addition and subtraction of roman values
 Author: Vinay vittal Karagod
 File dependents: main.c, calculator.h, calculator.c,calculator-test.check
 Date: 08/21/2016
-calculator.c: This is a function file which receives values form check this will returns the output of the program
+calculator.c: function file which receives values from calculator-test.check. 
+	      This will returns the output of the program
 */
 # include "calculator.h"
 # include <check.h>
@@ -30,7 +31,7 @@ char * calculate(char roman_number1[50],char roman_number2[50], int option)
 	        	sum =  first_number+ second_number;
 	        	if(sum > 3999)
 	        	{
-	        	 	printf("Number exceeds the maximum limit");
+	        	 	printf("Number exceeds the maximum limit \n");
 	        	 	exit(0);
 	        	}
 	        	else
@@ -44,7 +45,7 @@ char * calculate(char roman_number1[50],char roman_number2[50], int option)
 
 	        	if(sub > 3999)
 	        	  {
-	        	  	 printf("Number exceeds the maximum limit");
+	        	  	 printf("Number exceeds the maximum limit \n");
 	        	   	 exit(0);
 	        	  }
 			else				
